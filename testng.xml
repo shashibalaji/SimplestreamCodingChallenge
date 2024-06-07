@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="framework.testUtils.Listeners"/>
+	</listeners>
+	
+  <test thread-count="5" name="AndroidTests">
+    <classes>
+      <class name="mobile.browser.MobileBrowserTest_Android"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="IOSTests">
+    <classes>
+      <class name="mobile.browser.MobileBrowserTest_IOS"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
